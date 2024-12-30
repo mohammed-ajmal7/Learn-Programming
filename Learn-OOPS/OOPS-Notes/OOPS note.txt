@@ -1,0 +1,47 @@
+OOPS:
+1.class and object
+2.polymorphism ------>
+         	1. compile time polymorphism 
+			2. run time polymorphism
+
+3.inheritance ------->	
+            1. single level inheritance
+			2. multi level inheritance
+			3. hierarchical inheritance
+			4. hybrid inheritance
+
+4.Encapsulation ------->
+			1. private method (getter and setter)
+
+5. Abstract ------->
+			1. Abstract class  (abstract method with NO implementation){ abstract void draw();}
+			2. concrete class (some abstract method its inherited or directly used )
+			3. interface (only abstact method)
+
+
+access specifiers :
+
+1. public --->
+         1. Same Class
+		 2. Same Package
+		 3. Subclasses (Inheritance)
+		 4. Unrelated Classes in Different Packages
+	
+2. default  ---> 
+         1. Same Class
+		 2. Same Package
+		 3. Subclasses (Inheritance) [only if they are in the same package]
+
+3. protected ---> 
+        1. Same Class
+	    2. Same Package
+		3. Subclasses (Inheritance) [even if they are in the Different package]
+
+4. private --->   
+        1. Same Class	  (getter and setter)
+
+
+
+
+
+

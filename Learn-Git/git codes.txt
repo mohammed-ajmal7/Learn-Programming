@@ -1,0 +1,135 @@
+
+----for setting variable for global-------------------
+git config --global user.name ""
+git config --global user.email ""
+git config --global core.editor "code --wait" [for making default editor]
+git config --global -e
+
+
+
+
+----for control end of line [to prevent problems]------------
+
+git config --global core.autocrlf true [window]
+git config --global core.autocrlf input [mac]
+
+
+
+
+
+git config --help
+git config --h  [ for simple ] 
+
+
+
+git ls-files [for checking files in check-in stage]
+
+.gitignore [ to ignore the files which you dont want to track by git]
+
+
+
+
+------to check diff made------------
+git diff [in dir]
+git diff --stagged [in stagged]
+
+
+
+
+-----for setting vs code for diff-------------
+git config --global diff.tool vscode [for setting our diff tool to vscode]
+
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+
+
+
+
+-----for history-------
+git log
+git log --oneline
+git show (name)
+git show HEAD~1
+git show HEAD~1:.gitignore [to see only about last file]
+git ls-tree HEAD~1
+git show HEAD
+
+git ls-tree
+git ls-tree HEAD~1 [tree - dir blobs - files]
+ 
+
+
+
+-----undo staged-------------
+git restore --staged .
+git restore --staged filename
+
+OR
+
+git reset (file name0
+git reset .
+
+
+-----undo commited-------------
+
+git reset HEAD~1
+git reset (hash)
+git reset --hard (hash) to undo commit from GitHub also 
+
+
+
+--- to remove a staged file ----------------
+
+git rm file name [it will remove file from our dir and also from git staged]
+git rm --cached file name [it will remove from only staged]
+git rm -cached -r [to remove files recursively]
+
+git status -s
+
+
+
+----to remove all tracked files-----
+git clean .
+git clean --interactive [to remove the files which created before the git init
+
+-----go previous version-------
+git restore --source=HEAD~1 file.js[file name]
+
+
+
+
+
+
+
+
+-----------git connect with GitHub repo using cmd--------------
+
+git init
+git remote add origin "link" [origin can be anything "it is our repo name]
+git remote -v [to verify remote]
+
+
+
+
+-------------for branch-------------------
+
+git branch
+git branch (branch name)
+git checkout (branch name) [to use branch]
+git checkout -b (branch name) [create and use branch in one]
+git branch -M (branch name)
+git branch -d (branch name) [delete]
+
+
+
+-----------------for merging barnch--------------
+
+git diff (branch name) [diff with other branch]
+git merge (branch name) [
+
+------for push and pull------------
+
+git push origin main
+git push -u origin main 
+
+git pull origin main 
+
