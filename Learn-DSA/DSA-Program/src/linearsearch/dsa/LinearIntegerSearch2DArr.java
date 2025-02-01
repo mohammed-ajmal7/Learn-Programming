@@ -18,13 +18,13 @@ public class LinearIntegerSearch2DArr {
         linear(arr, target);
 
     }
-    static void linear(int[][] arr, int value){
+    static void linear(int[][] arr, int target){
         for (int row = 0; row < arr.length; row++) {
             for (int col = 0; col < arr[row].length; col++) {
-                if (value == arr[row][col]){
+                if (target == arr[row][col]){
 //                    System.out.println("Item found at index: [" + row + "][" + col + "]");
                     System.out.println("Item found at index: "+ Arrays.toString(new int[]{row, col}));
-                    return;
+                    return ;  // BREAKIING
                 }
             }
         }
