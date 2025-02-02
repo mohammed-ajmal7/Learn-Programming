@@ -17,8 +17,9 @@ public class BinarySearch {
         int start = 0;
         int end = arr.length -1;
             while (start <= end) {
-                int middle = start + (end - start) / 2;
-
+                int middle = start + (end - start) / 2;  // non-efficient mehtod is (start + end) / 2
+                          // 100   +   200 - 100  / 2                                100 +   200
+                                        // 100 / 2 = 50 + 100 = 150
                 if (target < arr[middle]){
                     end = middle - 1;
                 } else if (target > arr[middle]) { // arr[middle] means value
