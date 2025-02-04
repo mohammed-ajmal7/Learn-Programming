@@ -2,7 +2,7 @@ package binarysearch.dsa;
 
 
 //the largest number <= to the target
-public class SamplePro2Ceiling {
+public class FloorOfNumber {
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 7, 9};
         int target = 6;            // this was an question where we want which is the <= 6 but in other ceiling we cheked >= 6
